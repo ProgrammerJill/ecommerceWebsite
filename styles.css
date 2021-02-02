@@ -1,0 +1,588 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  background-color: #202c39;
+  color: #e2e2e2;
+  font-family: "Raleway", sans-serif;
+}
+
+body .main-header h1 {
+  margin: 4em 0 0 0;
+  font-family: "Courgette", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.header {
+  margin: auto;
+  margin-top: 2em;
+  display: grid;
+  height: 100%;
+  max-height: 150px;
+  width: 90%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header-left-icons {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20%;
+}
+
+.header-right-icons {
+  text-align: right;
+}
+
+/************************************* FUCKING UL's AND LI's *************************************************/
+
+.main-header ul {
+  list-style-type: none;
+  margin: 3em 0 1.2em 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main-header ul li ul {
+  border-bottom: 3px solid #1d2835;
+  border-top: none;
+  background-color: #202c39;
+  margin: 0em;
+  display: block;
+  opacity: 0;
+  border-radius: 5px;
+  padding: 0.5em 0.2em;
+  position: absolute;
+  transition: opacity background-color 0.2s ease;
+  box-shadow: 0 0 7px #202c39;
+}
+
+.main-header ul li:hover ul {
+  display: block;
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.main-header ul li a {
+  height: 3em;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #e2e2e2;
+  margin: 0.2em;
+  padding: 0 3em;
+}
+
+.main-header a:hover {
+  color: #89c2d9;
+}
+
+.main-header ul li ul a:hover {
+  background-color: #1d2835;
+  color: #ffffff;
+  transition: 0.2s;
+}
+
+.main-header ul li ul a {
+  padding: 10px 2.5em;
+}
+
+.main-header ul li ul li {
+  padding-top: 10px;
+  line-height: 30px;
+}
+
+.header-links a img {
+  width: 11px;
+}
+
+/********************************************** BUTTONS *******************************************************/
+
+.header button {
+  margin: 4em 0.5em;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: #202c39;
+  transition: transform 0.1s;
+  outline: none;
+}
+
+.shopping-basket-button {
+  background-image: url(pics/shopping-basket.png);
+}
+
+.shopping-basket-button:hover {
+  background-image: url(pics/shopping-basket-hover.png);
+  transform: scale(1.1);
+}
+
+.main-header .instagram-button {
+  background-image: url(../pics/instagram-icon.png);
+}
+
+.main-header .instagram-button:hover {
+  background-image: url(pics/instagram-icon-hover.png);
+  transform: scale(1.1);
+}
+
+.background-betta {
+  background-size: cover;
+}
+
+.background-betta img {
+  border: 2px solid #1d2835;
+}
+
+.search-bar {
+  margin: 1em auto;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+}
+
+.search-input {
+  margin: 0;
+  flex-grow: 1;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #1d2835;
+  background-color: #e2e2e2;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  transition: background-color 0.25s, box-shadow 0.25s;
+}
+
+.search-input:focus {
+  background-color: white;
+  box-shadow: 0 0 2px #202c39;
+}
+
+.search-input::placeholder {
+  color: #202c39;
+}
+
+.main-header form button {
+  background-color: #1d2835;
+  background-size: 2em;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 3em;
+  height: 3em;
+  border: none;
+  outline: none;
+  transition: background-color 0.2s ease;
+}
+
+.search-button {
+  background-image: url(pics/mag-glass.png);
+}
+
+.search-button:hover {
+  background-image: url(pics/mag-glass-hover.png);
+  background-color: #19232e;
+  transition: 0.5s;
+}
+
+/**************************************** SEARCH AND FIND FISH SECTION *****************************************/
+
+.guarantee-grid {
+  margin: 35px auto 45px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  background-color: #2f4053;
+  color: #e2e2e2;
+  width: 95%;
+  border-radius: 5px;
+  font-size: 13;
+}
+
+.guarantee-grid img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 2px;
+}
+
+.live-guarantee img {
+  width: 55px;
+}
+
+.free-shipping img {
+  width: 57px;
+}
+
+.fish-selection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gold-laser,
+.endler-guppy,
+.java-moss {
+  width: 359px;
+  height: 238px;
+  position: relative;
+  margin: 30px auto;
+  color: #e2e2e2;
+}
+
+.gold-laser img,
+.endler-guppy img,
+.java-moss img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 2px solid #1d2835;
+}
+
+.gold-laser::after,
+.endler-guppy::after,
+.java-moss::after {
+  content: "";
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.gold-laser:hover::after,
+.endler-guppy:hover::after,
+.java-moss:hover::after {
+  opacity: 0.5;
+  color: #e2e2e2;
+}
+
+.gold-laser::after {
+  content: "Corydoras";
+  padding-top: 30px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.endler-guppy::after {
+  content: "Guppies";
+  padding-top: 100px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.java-moss::after {
+  content: "Plants";
+  padding-top: 170px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.section-2 p {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  max-width: 850px;
+  line-height: 1.5em;
+  padding-top: 20px;
+}
+
+/***************************************** About Me ***********************************************/
+
+.lower-about-section {
+  margin-top: 45px;
+}
+
+.about-Jill h2 {
+  font-weight: 400;
+  color: #89c2d9;
+}
+
+.about-me-grid img {
+  width: 70px;
+  margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.about-me-grid {
+  margin-bottom: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 15% 35%;
+}
+
+.about-me-grid span {
+  display: block;
+  margin: none;
+}
+
+.about-me-left {
+  padding-right: 10px;
+  padding-left: 55px;
+  text-align: right;
+}
+
+.about-me-left h2 {
+  text-align: right;
+}
+
+.about-me-right {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.about-me-right p {
+  margin: 10px 0 20px 0;
+}
+
+.about-me-right h2 {
+  margin: 12px 0;
+  text-align: left;
+}
+
+.lower-about-section form button {
+  background-color: #1d2835;
+  background-size: 2em;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 7em;
+  height: 3em;
+  border: none;
+  outline: none;
+  transition: background-color 0.2s ease;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #e2e2e2;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.lower-about-section form button:hover {
+  color: #f7f7f7;
+  background-color: #19232e;
+  transition: 0.2s;
+}
+
+.subscribe-bar {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+}
+
+.subscribe-input {
+  margin: 0;
+  flex-grow: 1;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #1d2835;
+  background-color: #e2e2e2;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  transition: background-color 0.25s, box-shadow 0.25s;
+}
+
+.subscribe-input:focus {
+  background-color: white;
+  box-shadow: 0 0 2px #202c39;
+}
+
+/*****
+*************************************** FOOTER THTUFF ******************************************/
+
+footer {
+  background-color: #1d2835;
+  border-radius: 5px;
+  height: 180px;
+  margin-bottom: 10px;
+}
+
+footer button {
+  margin: 10px 5px;
+  padding: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: #1d2835;
+  outline: none;
+  transition: background-color 0.2s ease;
+}
+
+footer .instagram-button {
+  width: 20px;
+  height: 20px;
+  background-image: url(pics/footer-instagram.png);
+}
+
+footer .instagram-button:hover {
+  background-image: url(pics/footer-instagram-hover.png);
+  transition: 0.2s;
+}
+
+footer .youtube-button {
+  width: 23px;
+  height: 23px;
+  background-image: url(pics/footer-youtube.png);
+}
+
+footer .youtube-button:hover {
+  background-image: url(pics/footer-youtube-hover.png);
+  transition: 0.2s;
+}
+
+.footer-grid {
+  padding: 40px 20px 0 20px;
+  display: grid;
+  grid-template-columns: 10% 17% 17% 56%;
+}
+
+.footer-info p,
+.footer-service p {
+  color: #89c2d9;
+  text-align: left;
+}
+
+.footer-grid li {
+  text-align: left;
+  list-style-type: none;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.footer-grid ul {
+  padding: 0;
+}
+
+.footer-grid a {
+  color: #e2e2e2;
+  text-decoration: none;
+}
+
+.footer-grid a:hover {
+  color: #89c2d9;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  padding-top: 105px;
+  text-align: right;
+}
+
+/************************************* PAGE 2 THTUFF ****************************************************/
+
+body .all-live-fish {
+  margin-top: 100px;
+}
+
+body .all-live-fish-flex {
+  margin: 0;
+}
+
+body .all-live-fish-flex {
+  max-width: 1200px;
+  width: 100%;
+  background-color: #1d2835;
+  padding: 30px 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+body .all-live-fish-flex h2 {
+  color: #e2e2e2;
+  padding-top: 5px;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+body .all-live-fish-flex select {
+  max-width: 180px;
+  width: 100%;
+  height: 40px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  text-align: center;
+  padding: 7px 0;
+  background-color: #e2e2e2;
+  color: #19232e;
+  font-family: "Raleway", sans-serif;
+  border-top: 1px solid #19232e;
+  border-bottom: 1px solid #19232e;
+  border-left: none;
+  border-right: none;
+}
+
+body .all-live-fish-flex select:focus {
+  outline: none;
+}
+
+body .all-live-fish img {
+  width: 300px;
+  border-radius: 5px;
+  border: 2px solid #1d2835;
+}
+
+.live-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.live-products h4 {
+  font-family: "Raleway", sans-serif;
+  margin: 10px 0;
+  color: #89c2d9;
+  font-weight: 300;
+}
+
+.live-products p {
+  margin: 10px 0;
+}
+
+.live-products a {
+  color: #e2e2e2;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.live-products a h4:hover {
+  color: #9bdffb;
+  transition: 0.2s;
+}
+
+.guarantee-page2 {
+  margin-bottom: 10px;
+}
+
+.all-live-fish .live-guarantee img {
+  border: none;
+  width: 55px;
+}
+
+.all-live-fish .free-shipping img {
+  border: none;
+  width: 57px;
+}
+
+.live-plants {
+  margin-bottom: 100px;
+}
+
+.live-fish {
+  margin-bottom: 25px;
+}
