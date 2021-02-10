@@ -201,6 +201,7 @@ body .main-header h1 {
 /**************************************** SEARCH AND FIND FISH SECTION *****************************************/
 
 .guarantee-grid {
+  padding: 15px 0;
   margin: 35px auto 45px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -331,11 +332,27 @@ body .main-header h1 {
   margin: none;
 }
 
-.about-me-left {
-  padding-right: 10px;
-  padding-left: 55px;
-  text-align: right;
+.about-me-grid p {
+  line-height: 140%;
+  margin: 10px 0 20px 0;
 }
+
+.about-me-left p:last-of-type {
+  margin: 0;
+}
+
+
+.about-me-left {
+  padding: 10px 10px ;
+  padding-right: 10px;
+  text-align: right;
+  margin:  auto 0 auto auto ;
+}
+
+.about-me-left p{
+ width: 500px;
+}
+
 
 .about-me-left h2 {
   text-align: right;
@@ -344,14 +361,10 @@ body .main-header h1 {
 .about-me-right {
   padding-left: 10px;
   text-align: left;
-}
-
-.about-me-right p {
-  margin: 10px 0 20px 0;
+  margin: auto auto auto 0;
 }
 
 .about-me-right h2 {
-  margin: 12px 0;
   text-align: left;
 }
 
@@ -379,6 +392,7 @@ body .main-header h1 {
 }
 
 .subscribe-bar {
+  padding-top: 10px;
   width: 100%;
   max-width: 350px;
   display: flex;
@@ -477,6 +491,7 @@ footer .youtube-button:hover {
 }
 
 .footer-copyright {
+  margin: 10px;
   font-size: 12px;
   padding-top: 105px;
   text-align: right;
