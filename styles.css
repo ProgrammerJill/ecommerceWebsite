@@ -202,7 +202,7 @@ body .main-header h1 {
 
 .guarantee-grid {
   padding: 15px 0;
-  margin: 35px auto 45px auto;
+  margin: 25px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
@@ -341,18 +341,16 @@ body .main-header h1 {
   margin: 0;
 }
 
-
 .about-me-left {
-  padding: 10px 10px ;
+  padding: 10px 10px;
   padding-right: 10px;
   text-align: right;
-  margin:  auto 0 auto auto ;
+  margin: auto 0 auto auto;
 }
 
-.about-me-left p{
- width: 500px;
+.about-me-left p {
+  width: 500px;
 }
-
 
 .about-me-left h2 {
   text-align: right;
@@ -497,17 +495,16 @@ footer .youtube-button:hover {
   text-align: right;
 }
 
+/********************************************************************************************************/
 /************************************* PAGE 2 THTUFF ****************************************************/
+/********************************************************************************************************/
 
 body .all-live-fish {
   margin-top: 100px;
 }
 
 body .all-live-fish-flex {
-  margin: 0;
-}
-
-body .all-live-fish-flex {
+  margin: 0 auto;
   max-width: 1200px;
   width: 100%;
   background-color: #1d2835;
@@ -525,6 +522,7 @@ body .all-live-fish-flex h2 {
 }
 
 body .all-live-fish-flex select {
+  margin: 0;
   max-width: 180px;
   width: 100%;
   height: 40px;
@@ -545,13 +543,18 @@ body .all-live-fish-flex select:focus {
   outline: none;
 }
 
+/********************************************** Fish For Sale & Plants For Sale **************************************/
+
 body .all-live-fish img {
   width: 300px;
   border-radius: 5px;
   border: 2px solid #1d2835;
+  position: relative;
 }
 
 .live-products {
+  max-width: 1300px;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
@@ -580,24 +583,22 @@ body .all-live-fish img {
   transition: 0.2s;
 }
 
-.guarantee-page2 {
-  margin-bottom: 10px;
-}
-
-.all-live-fish .live-guarantee img {
-  border: none;
-  width: 55px;
-}
-
-.all-live-fish .free-shipping img {
-  border: none;
-  width: 57px;
-}
-
 .live-plants {
   margin-bottom: 100px;
 }
 
 .live-fish {
   margin-bottom: 25px;
+}
+
+/******************************************* Second Guarantee Grid ************************************/
+
+.guarantee-page2 {
+  margin-bottom: 10px;
+}
+
+.all-live-fish .live-guarantee img,
+.all-live-fish .free-shipping img {
+  border: none;
+  width: 55px;
 }
