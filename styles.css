@@ -602,3 +602,37 @@ body .all-live-fish img {
   border: none;
   width: 55px;
 }
+
+/*************************************************************************************************************/
+/************************************************ PAGE 3 THTUFF**********************************************/
+/*************************************************************************************************************/
+
+.main-header3 {
+  margin-bottom: 200px;
+}
+.fish-showcase-grid {
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1300px;
+  width: 100%;
+}
+
+.fish-showcase-grid img {
+  margin: 0 0 0 auto;
+  width: 550px;
+}
+
+.fish-showcase-text {
+  font-family: "Raleway", sans-serif;
+  margin: 20px 50px;
+  text-align: left;
+  line-height: 140%;
+}
+
+.fish-showcase-text h2 {
+  color: #89c2d9;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
