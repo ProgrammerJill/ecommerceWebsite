@@ -570,6 +570,7 @@ body .all-live-fish img {
 
 .live-products p {
   margin: 10px 0;
+  padding-bottom: 15px;
 }
 
 .live-products a {
@@ -591,6 +592,11 @@ body .all-live-fish img {
   margin-bottom: 25px;
 }
 
+.sale-column i{
+  width: 15px;
+}
+
+
 /******************************************* Second Guarantee Grid ************************************/
 
 .guarantee-page2 {
@@ -610,6 +616,11 @@ body .all-live-fish img {
 .main-header3 {
   margin-bottom: 200px;
 }
+
+
+/************************* Product Showcase **********************/
+
+
 .fish-showcase-grid {
   margin-bottom: 100px;
   display: grid;
@@ -636,3 +647,52 @@ body .all-live-fish img {
   margin: 10px 0;
 }
 
+.price{
+  font-size: 20px;
+}
+
+/********* Quantity Input ************/
+
+.quantity-input{
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 25%;
+}
+
+.quantity-input label{
+  padding-bottom: 5px;
+}
+
+.input-bar{
+  padding: 10px;
+  height: 40px;
+  width: 100%;
+  border-radius: 2px;
+  border-style: none;
+}
+
+.input-bar:focus{
+  outline: none;
+}
+
+/********* Add to Cart Button ************/
+
+
+.add-to-cart-button{
+  margin-bottom: 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  width: 100%;
+  height: 60px;
+  background-color: #1d2835;
+  border: none;
+  border-radius: 2px;
+  color: #e2e2e2;
+  transition: background-color 0.2s ease;
+}
+
+.add-to-cart-button:hover {
+  color: #f7f7f7;
+  background-color: #19232e;
+  transition: 0.2s;
+}
